@@ -249,6 +249,14 @@
   height: 300px;
   padding: 40px 30px;
   /* overflow: ; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+
+.card-box2:hover{
+  cursor: pointer;
+  transform: translateY(-10px);
 }
 
 .slider-container {
@@ -798,6 +806,12 @@
   overflow: hidden;
   height: 300px;
   position: relative; /* important for absolute child */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutor-card:hover{
+  cursor: pointer;
+  transform: translateY(-10px);
 }
 
 .tutor-level-card {
@@ -1470,16 +1484,63 @@
   margin-bottom: 40px;
 }
 
-.feature-box {
+/* .feature-box {
   background: white;
   border-radius: 10px;
   padding-top: 30px;
-  /* padding: 20px; */
   padding-left: 20px;
   padding-right: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   height: 300px;
 }
+
+.feature-box:hover{
+  background: var(--primary-color);
+  color: #ff8c00;
+}
+
+.feature-box h3,.feature-box p:hover{
+  color: white;
+}
+
+.feature-box p,h3:hover{
+  color: white;
+}
+
+.feature-box .icon:hover{
+  color: #ff8c00;
+} */
+
+
+.feature-box {
+  background: white;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  height: 300px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+.feature-box:hover h3,
+.feature-box:hover p {
+  color: white;
+}
+
+.feature-box .icon {
+  transition: color 0.3s ease-in-out;
+}
+
+.feature-box:hover .icon {
+  color: #ff8c00;
+}
+
 
 .icon {
   font-size: 2rem;
@@ -2146,4 +2207,15 @@
   margin-bottom: 20px;
   display: block;
   border-radius: 50px;
+}
+
+.connect{
+  background-color: #4a00b1;
+}
+
+
+.connect:hover{
+  color: white;
+  background-color: var(--secondary-color);
+
 }
