@@ -250,13 +250,19 @@
   padding: 40px 30px;
   /* overflow: ; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-
 }
 
 .card-box2:hover{
   cursor: pointer;
   transform: translateY(-10px);
+    background:var(--primary-color);
+    color: white;
+
+}
+
+.card-box2:hover .card-title,
+.card-box2:hover .card-desc {
+  color: white;
 }
 
 .slider-container {
@@ -813,6 +819,24 @@
   cursor: pointer;
   transform: translateY(-10px);
 }
+
+.tutor-card .tutor-image {
+  overflow: hidden;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.tutor-card .tutor-image img {
+  transition: transform 0.4s ease;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.tutor-card:hover .tutor-image img {
+  transform: scale(1.1);
+}
+
 
 .tutor-level-card {
   background: transparent; /* remove background so image dominates */
@@ -2176,6 +2200,8 @@
   }
 }
 
+
+
 @media (max-width: 576px) {
   .tuition-slider-container {
     padding: 0 10px;
@@ -2192,6 +2218,8 @@
   .mid-card {
     margin-top: 30px;
   }
+
+
 }
 
 .orange-box {

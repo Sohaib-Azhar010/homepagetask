@@ -135,6 +135,21 @@
         background-color: #6267c4e6; /* Blue overlay with 70% opacity */
         z-index: 0;
       }
+      .login-card {
+        width: 100%;
+        max-width: 520px;
+      }
+      @media (max-width: 480px) {
+        .login-card {
+          max-width: 380px;
+        }
+
+        .login-container {
+        min-height: 110vh;
+        z-index: 1;
+        position: relative;
+      }
+      }
     </style>
   </head>
   <body>
@@ -430,8 +445,7 @@
         <div
           class="login-card bg-white rounded shadow"
           style="
-            width: 100%;
-            max-width: 520px;
+           
             z-index: 2;
             position: relative;
             padding: 40px;
